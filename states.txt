@@ -1,0 +1,40 @@
+Texas,26059203,Republican,Central
+New York,19570261,Democratic,Eastern
+Illinois,12875255,Democratic,Central
+Pennsylvania,12763536,Democratic,Eastern
+Ohio,11544225,Democratic,Eastern
+Michigan,9883360,Democratic,Eastern
+North Carolina,9752073,Republican,Eastern
+New Jersey,8864590,Democratic,Eastern
+Virginia,8185867,Democratic,Eastern
+Massachusetts,6646144,Democratic,Eastern
+Arizona,6553255,Republican,Mountain
+Indiana,6537334,Republican,Eastern
+Missouri,6021988,Republican,Central
+Maryland,5884563,Democratic,Eastern
+Wisconsin,5726398,Democratic,Central
+Minnesota,5379139,Democratic,Central
+Colorado,5187582,Democratic,Mountain
+South Carolina,4723723,Republican,Eastern
+Louisiana,4601893,Republican,Central
+Kentucky,4380415,Republican,Central
+Oklahoma,3814820,Republican,Central
+Connecticut,3590347,Democratic,Eastern
+Iowa,3074186,Democratic,Central
+Arkansas,2949131,Republican,Central
+Kansas,2885905,Republican,Central
+Utah,2855287,Republican,Mountain
+Nevada,2758931,Democratic,Pacific
+New Mexico,2085538,Democratic,Mountain
+Nebraska,1855525,Republican,Central
+West Virginia,1855413,Republican,Eastern
+Idaho,1595728,Republican,Mountain
+Maine,1329192,Democratic,Eastern
+New Hampshire,1320718,Democratic,Eastern
+Rhode Island,1050292,Democratic,Eastern
+Montana,1005141,Republican,Mountain
+Delaware,917092,Democratic,Eastern
+South Dakota,833354,Republican,Central
+North Dakota,699628,Republican,Central
+Vermont,626011,Democratic,Eastern
+Wyoming,576412,Republican,Mountain

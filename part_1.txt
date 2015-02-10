@@ -1,0 +1,59 @@
+Maria Luong
+
+1. I typed in "use test;" and then "show tables;" and the database is currently showing "empty set".
+
+2. The columns in the "func" table are name, ret, dl, type. Name is the primary key in the table and is a char of size 64. Ret is a tinyint(1) and dl is a char of size 128. There is an enum called type with the choices of "function" and "aggregate". Null values are not permitted for any of the columns and the default value for "type" is null. There are no records in the table and it looks like the table may store store some functions since you can choose between function and aggregate. (Some research shows that it actually is for user-defined functions)
+
+3. * List all the columns in your table,
+
+		mysql> show columns in states;
+		+------------+---------------------------------------------------------------------+------+-----+---------+----------------+
+		| Field      | Type                                                                | Null | Key | Default | Extra          |
+		+------------+---------------------------------------------------------------------+------+-----+---------+----------------+
+		| name       | varchar(20)                                                         | YES  |     | NULL    |                |
+		| population | int(11)                                                             | YES  |     | NULL    |                |
+		| id         | int(11)                                                             | NO   | PRI | NULL    | auto_increment |
+		| pol_party  | enum('Republican','Democratic')                                     | YES  |     | NULL    |                |
+		| time_zone  | enum('Eastern','Central','Mountain','Pacific','Hawaiian','Alaskan') | YES  |     | NULL    |                |
+		+------------+---------------------------------------------------------------------+------+-----+---------+----------------+
+		5 rows in set (0.00 sec) 
+
+   * Output the states in descending order of population
+
+		mysql> select name, population from states order by population desc;
+		+-------------+------------+
+		| name        | population |
+		+-------------+------------+
+		| California  |   39041928 |
+		| Florida     |   19899324 |
+		| Georgia     |    9199456 |
+		| Tennessee   |    6930493 |
+		| Washington  |    6877899 |
+		| Alabama     |    4838228 |
+		| Oregon      |    3899758 |
+		| Mississippi |    2849583 |
+		| Hawaii      |    1394847 |
+		| Alaska      |     731449 |
+		+-------------+------------+
+		10 rows in set (0.00 sec)
+
+
+   * Some other query of your choice that tells me something interesting about your data.
+
+		mysql> select name, pol_party from states order by pol_party;
+		+-------------+------------+
+		| name        | pol_party  |
+		+-------------+------------+
+		| Tennessee   | Republican |
+		| Mississippi | Republican |
+		| Alabama     | Republican |
+		| Alaska      | Republican |
+		| Georgia     | Republican |
+		| Oregon      | Democratic |
+		| Hawaii      | Democratic |
+		| Florida     | Democratic |
+		| Washington  | Democratic |
+		| California  | Democratic |
+		+-------------+------------+
+		10 rows in set (0.00 sec)
+
