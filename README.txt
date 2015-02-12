@@ -7,7 +7,7 @@
 		For this sql query, I am retrieving the names of all the products that customer number 415 (Bavarian Collectables Imports, Co.) have bought. I also retrieved the name of customer 415.
 
 
-2.	select sum(payments.amount) from payments 
+2.	select employees.employeeNumber, sum(payments.amount) from payments 
 	join customers on customers.customerNumber = payments.customerNumber 
 	join employees on employees.employeeNumber = customers.salesRepEmployeeNumber 
 	where employeeNumber = 1501;
@@ -26,7 +26,7 @@
 		Using subqueries, this query displays the number of customers that the employees from office number 5 have in total.
 
 
-5.	select jobTitle,lastName,firstName from employees 
+5.	select jobTitle,lastName, firstName from employees 
 	right outer join customers on customers.salesRepEmployeeNumber = employees.employeeNumber;
 
 		The right outer join displays the names and job titles of employees who are in the employees' table that match as well as nulls for when there is no match.
@@ -43,7 +43,7 @@
 	select customerName, salesRepEmployeeNumber from customers
 	right join employees on salesRepEmployeeNumber = employeeNumber;
 
-		Here I am emulating a full join (since it doesn't seem to be working for me) by using left and right joins. The query returns all of the customers and their sales representatives' employee number.
+		Here I am emulating a full join (since it doesn't seem to be working for me) by using left and right joins. The query returns all of the customers and their sales representatives' employee number (including nulls).
 
 
 8.	select customerName, customerNumber,(select max(amount) from payments)
